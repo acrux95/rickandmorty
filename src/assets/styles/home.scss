@@ -1,0 +1,69 @@
+@import './vars.scss';
+
+.hero{
+  background-image: url('../static/background.png');
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: $black;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  font-family: $font;
+  .titleZone{
+    padding-top: 100px;
+    .title{
+      display: flex;
+      justify-content: center;
+      .logo{
+        width: 450px;
+      }
+    }
+  }
+  .subTitle{
+    display: flex;
+    color: $yellow;
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 4vw;
+  }
+  .favoritesBar{
+    display: inline-flex;
+    width: 94vw;
+    height:auto;
+    margin-left: 2vw;
+    overflow-x: auto;
+    overflow-y:hidden;
+  }
+  .cardSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .newCharacter {
+    width: 200px;
+    margin-left: 9vw;
+    padding-top: 80px;
+    .newButton {
+      outline: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      img {
+        width: 120px;
+      }
+    }
+    h2 {
+      padding-bottom: 80px;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 600px){
+  .hero{
+    background-image: none;
+
+  }
+}
