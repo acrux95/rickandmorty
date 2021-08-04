@@ -8,6 +8,7 @@ import {
 
 const initialState = [];
 
+
 const reducer = (characters = initialState, action) => {
   // const exist = state.myList.find(character => character.id === action.payload.id);
   switch (action.type) {
